@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drag and Drop System</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div class="main clearfix">
+	<div
+		class="edit-area left" 
+		id="editArea" 
+		ondrop="handleDrop(event)" 
+		ondragover="allowDrop(event)" ondragleave="handleDropOut(event)"></div>
+	<div class="element-area left">
+		<div class="element" draggable="true" ondragstart="drag(event)" data-type='input'>input</div>
+		<div class="element" draggable="true" ondragstart="drag(event)" data-type='row'>row</div>
+		<div class="element" draggable="true" ondragstart="drag(event)" data-type='select'>select</div>
+		<button id="getOutput" onclick="getOutput()">
+			See HTML
+		</button>
+		<div id="fakeScreen"></div>
+		<div id="output"></div>
+	</div>
+</div>
+<body>
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>

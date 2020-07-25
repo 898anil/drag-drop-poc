@@ -1,0 +1,36 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+.left {
+	float: left;
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.edit-area {
+	width: 75%;
+	height: 100vh;
+	border-width: 1px solid #444;
+}
+.element-area {
+	width: 25%;
+}
+
+.element {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100px;
+}
+
+.can-drop{
+	border-style: dotted;
+}
